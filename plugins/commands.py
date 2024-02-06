@@ -170,7 +170,7 @@ async def start(client, message):
             ]]
             await message.reply(f"[{get_size(files.file_size)}] {files.file_name}\n\nDOWNLOAD LINK: {link} Your file is ready, Please get using this link. 👍", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             await asyncio.sleep(3)
-            await sent_message.delete(Message Deleted Successfully!)
+            await sent_message.delete("your msg deleted")
             return
     else:
         pass
