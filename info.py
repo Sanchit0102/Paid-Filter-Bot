@@ -76,6 +76,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
+ADMIN_LINK = environ.get('ADMIN_LINK', 'https://t.me/MixologyOwnerBot') #for payment receipt & contact admin
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Rkbotzsupport')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/Rkbotz')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/RkMovie_group')
