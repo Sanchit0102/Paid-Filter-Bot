@@ -1,16 +1,20 @@
 class script(object):
-    START_TXT = """<b>ʜᴇʏ {}, <i>{}</i>
+    START_TXT = """<b>Hey {},</b>
     
-ɪ ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ᴡɪᴛʜ ʟɪɴᴋ sʜᴏʀᴛᴇɴᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴀꜱ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ᴡɪᴛʜ ʟɪɴᴋ sʜᴏʀᴛᴇɴᴇʀ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ... ɪᴛ'ꜱ ᴇᴀꜱʏ ᴛᴏ ᴜꜱᴇ ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴀꜱ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇʀᴇ ᴍᴏᴠɪᴇꜱ ᴡɪᴛʜ ʏᴏᴜʀ ʟɪɴᴋ ꜱʜᴏʀᴛᴇɴᴇʀ... ♻️</b>"""
+<b>I'm Powerful Auto-Filter Bot. I can Provide Movies, Series</b>
 
-    MY_ABOUT_TXT = """★ Server: <a href=https://www.heroku.com>Heroku</a>
-★ Database: <a href=https://www.mongodb.com>MongoDB</a>
-★ Language: <a href=https://www.python.org>Python</a>
-★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
+<i>Its Easy to Use Me; Join Our Movie, Series <a href="https://t.me/MixologyMoviesSeries">Group</a> and type the name you will get Direct file(s) 📂...</i>
 
-    MY_OWNER_TXT = """★ Name: RK Bots
-★ Username: @Rk_botowner
-★ Update Channel : @Rkbotz"""
+<b> <a href="https://t.me/moviemixologymanager/341">𝖳𝗎𝗍𝗈𝗋𝗂𝖺𝗅 𝖵𝗂𝖽𝖾𝗈 🎦</a></b>"""
+
+    MY_ABOUT_TXT = """○ Server: <a href=https://www.heroku.com>Heroku</a>
+○ Database: <a href=https://www.mongodb.com>MongoDB</a>
+○ Language: <a href=https://www.python.org>Python</a>
+○ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
+
+    MY_OWNER_TXT = """○ My Name: @MixologyFilterBot
+○ Creator: @MovieMixology
+○ Updates: @MovieMixologyManager"""
 
     STATUS_TXT = """🗂 Total Files: <code>{}</code>
 👤 Total Users: <code>{}</code>
@@ -25,29 +29,39 @@ ID - <code>{}</code>
 Username - {}
 Total - <code>{}</code>"""
 
-    NEW_USER_TXT = """#NewUser
-★ Name: {}
-★ ID: <code>{}</code>"""
+    NEW_USER_TXT = """<i><b>#NewUser</b></i>
+┠ Name: {}
+┖ ID: <code>{}</code>"""
 
-    NO_RESULT_TXT = """#NoResult
-★ Group Name: {}
-★ Group ID: <code>{}</code>
-★ Name: {}
-
-★ Message: {}"""
+    NO_RESULT_TXT = """<i><b>#NoResult</b></i>
+┠ Group Name: {}
+┠ Group ID: <code>{}</code>
+┠ Name: {}
+┃
+┖ Message: {}"""
 
     REQUEST_TXT = """★ Name: {}
 ★ ID: <code>{}</code>
 
 ★ Message: {}"""
 
-    NOT_FILE_TXT = """👋 Hello {},
+    NOT_FILE_TXT = """<b>Hey {},</b>
 
-I can't find the <b>{}</b> in my database! 🥲
+I can't find the <b>'{}'</b> in my database!
 
-👉 Google Search and check your spelling is correct.
-👉 Please read the Instructions to get better results.
-👉 Or not been released yet."""
+<b>1:</b> Google Search and check your spelling is correct.
+<b>2:</b> Please read the Instructions to get better results.
+<b>3:</b> Or not been released yet.
+
+<b>Report to Admin ▶️ @MixologySupport</b>"""
+
+    DMCA_TXT = """<b>©️ 𝖣𝗂𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋:</b>
+All the files in this bot are freely available on the internet or posted by somebody else.
+
+This bot is indexing files which are already uploaded on Telegram for ease of searching,
+We respect all the copyright laws and works in compliance with DMCA and EUCD.
+
+If anything is against law please contact us so that it can be removed ASAP."""
     
     EARN_TXT = """<b>ʜᴏᴡ ᴛᴏ ᴇᴀʀɴ ꜰʀᴏᴍ ᴛʜɪs ʙᴏᴛ
 
@@ -89,55 +103,63 @@ I can't find the <b>{}</b> in my database! 🥲
 🗣 Requested by: {message.from_user.mention}
 ©️ Powered by: <b>{message.chat.title}</b>"""
 
-    FILE_CAPTION = """<i>{file_name}</i>
-
-🚫 ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ 🚫"""
+    FILE_CAPTION = """{file_caption}"""
 
     WELCOME_TEXT = """👋 Hello {mention}, Welcome to {title} group! 💞"""
 
-    HELP_TXT = """<b>Note - <spoiler>Try each command without any argument to see more details 😹</spoiler></b>"""
+    HELP_TXT = """㊂ <i><b>Help Guide Menu!</b></i>
+
+<b>NOTE: </b><i><b>Click on any CMD to see more minor detalis.</b></i>"""
     
-    ADMIN_COMMAND_TXT = """<b>Here is bot admin commands 👇
+    ADMIN_COMMAND_TXT = """⌬ <i><b>Owner or Admins Commands!</b></i>
 
-/index_channels - to check how many index channel id added
-/stats - to get bot status
-/delete - to delete files using query
-/delete_all - to delete all indexed file
-/broadcast - to send message to all bot users
-/grp_broadcast - to send message to all groups
-/pin_broadcast - to send message as pin to all bot users.
-/pin_grp_broadcast - to send message as pin to all groups.
-/restart - to restart bot
-/leave - to leave your bot from particular group
-/unban_grp - to enable group
-/ban_grp - to disable group
-/ban_user - to ban a users from bot
-/unban_user - to unban a users from bot
-/users - to get all users details
-/chats - to get all groups
-/invite_link - to generate invite link
-/index - to index bot accessible channels
-/add_premium - to add user in premium
-/remove_premium - to remove user from premium</b>"""
+<b>Bot Settings:</b>
+┠ /settings: Change Bot Settings (Group also)
+┖ /index: Index files from Bot accessible Channels
+
+<b>Bot Stats:</b>
+┠ /chats: Get all Groups
+┠ /stats: Get Bot status
+┠ /users: All Users Details
+┠ /get_custom_settings: Get your Group Settings Details
+┖ /index_channels: Check how many index Channel I'd Added
+
+<b>Authentication:</b>
+┠ /add_premium: Add User in Premium
+┖ /remove_premium: Remove User from Premium
+
+<b>Restrictions:</b>
+┠ /unban_grp: Enable Group
+┠ /ban_grp: Disable Group
+┠ /ban_user: Ban a Users from Bot
+┠ /unban_user: Unban a Users from Bot
+┖ /leave: Leave your Bot from Particular Group
+
+<b>Broadcast:</b>
+┠ /broadcast: Send Message to all Bot Users
+┠ /grp_broadcast: Send Message to all Groups
+┠ /pin_broadcast: Send Message as Pin to all Bot Users
+┖ /pin_grp_broadcast: Send Message as Pin to all Groups
+
+<b>Delete Files:</b>
+┠ /delete: Delete files Using Query
+┖ /delete_all: Delete all Indexed File
+
+<b>Maintainance:</b>
+┖/restart: Restart the Bot"""
     
-    USER_COMMAND_TXT = """<b>Here is bot user commands 👇
+    USER_COMMAND_TXT = """⌬ <i><b>Users Commands!</b></i>
 
-/start - to check bot alive or not
-/settings - to change group settings as your wish
-/set_template - to set custom imdb template
-/set_caption - to set custom bot files caption
-/set_shortlink - group admin can set custom shortlink
-/get_custom_settings - to get your group settings details
-/set_welcome - to set custom new joined users welcome message for group
-/set_tutorial - to set custom tutorial link in result page button
-/id - to check group or channel id
-/my_plan - to check your plan details
-/plans - to get plan details</b>"""
+<b>Details:</b>
+┠ /id - Check Group, Channel or User I'd
+┠ /my_plan - Check your Plan Details
+┖ /plans - Get Plan Details"""
 
-    SOURCE_TXT = """<b>ʙᴏᴛ ɢɪᴛʜᴜʙ ʀᴇᴘᴏsɪᴛᴏʀʏ -
+    SOURCE_TXT = """<b>NOTE:</b>
+⚠️ 𝖳𝗁𝗂𝗌 𝖡𝗈𝗍 𝖨𝗌 𝖭𝗈𝗍 𝖠𝗇 𝖮𝗉𝖾𝗇 𝖲𝗈𝗎𝗋𝖼𝖾 𝖯𝗋𝗈𝗃𝖾𝖼𝗍.!
 
-- ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
+Thanks To Me For Spending Time For This.
 
-- ꜱᴏᴜʀᴄᴇ - <a href=https://github.com/Rishikesh-Sharma09/Auto-Filter-Bot>ʜᴇʀᴇ</a>
+𝖲𝗉𝖾𝖼𝗂𝖺𝗅 𝖳𝗁𝖺𝗇𝗄𝗌 𝖳𝗈 𝖬𝗒 𝖳𝖦 𝖥𝗋𝗂𝖾𝗇𝖽𝗌 𝖳𝗈𝗈.
 
-- ᴅᴇᴠʟᴏᴘᴇʀ - @Rkbotz"""
+𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝖽 𝖡𝗒: @MixologyOwnerBot"""
