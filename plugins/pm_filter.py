@@ -461,7 +461,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("⚠️")
 
     elif query.data == "instructions":
-        await query.answer("Movie Search Format :\n\nJust Only type the 🎬 Movie name with Release 🗓️ Year.\n\nExample :\nFighter  ✅, Fighter 2024 ✅\nFighter Movie ❌, Fighter Hindi Dubbed ❌\n\nSeries Search Format :\n\nLoki S01 ✅, Loki S01E01 ✅\nLoki Season 1 ❌, Loki Web Series ❌\n\n(Season 1= S01, Episode 1= E01)\n\nDon't use Symbols.", show_alert=True)
+        await query.answer("Movie Search Format :\nJust Only type the 🎬 Movie name with Release 🗓️ Year.\nExample :\nFighter or, Fighter 2024 \n\nSeries Search Format :\nExample:\nLoki S01 or, Loki S01E01\n(Season 1= S01, Episode 1= E01)\n\nDon't use Symbols.", show_alert=True)
 
     elif query.data == "start":
         await query.answer('Welcome!')
