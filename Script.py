@@ -1,11 +1,11 @@
 class script(object):
-    START_TXT = """<b>Hey {},</b>
+        START_TXT = """<b>Hey {},</b>
     
-<b>I'm Powerful Auto-Filter Bot. I can Provide Movies, Series</b>
+⪼ This bot will provide Movie/Series.
 
-<i>Its Easy to Use Me; Join Our Movie, Series <a href="https://t.me/MixologyMoviesSeries">Group</a> and type the name you will get Direct file(s) 📂...</i>
+⪼ Just Send the Movie/Series name with Proper Spelling... in the <a href="https://t.me/MixologyMoviesSeries">Group</a>.
 
-<b> <a href="https://t.me/moviemixologymanager/341">𝖳𝗎𝗍𝗈𝗋𝗂𝖺𝗅 𝖵𝗂𝖽𝖾𝗈 🎦</a></b>"""
+<i>🎦 Tutorial Video » <a href="https://t.me/moviemixologymanager/341">Click Here</a></i>"""
 
     MY_ABOUT_TXT = """○ Server: <a href=https://www.heroku.com>Heroku</a>
 ○ Database: <a href=https://www.mongodb.com>MongoDB</a>
