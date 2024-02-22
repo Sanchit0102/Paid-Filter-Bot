@@ -1,11 +1,11 @@
 class script(object):
     START_TXT = """<b>Hey {},</b>
     
-⪼ This bot will provide Movie/Series.
+<i>» This bot will provide Movie/Series.
 
-⪼ Just Send the Movie/Series name with Proper Spelling... in the <a href="https://t.me/MixologyMoviesSeries">Group</a>.
+» Just Send the Movie/Series name with Proper Spelling... in the <a href="https://t.me/MixologyMoviesSeries">Group</a>.
 
-<i>🎦 Tutorial Video » <a href="https://t.me/moviemixologymanager/341">Click Here</a></i>"""
+🎦 Tutorial Video » <a href="https://t.me/moviemixologymanager/341">Click Here</a></i>"""
 
     MY_ABOUT_TXT = """○ Server: <a href=https://www.heroku.com>Heroku</a>
 ○ Database: <a href=https://www.mongodb.com>MongoDB</a>
