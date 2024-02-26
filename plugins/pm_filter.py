@@ -420,8 +420,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         btn = [[            
             InlineKeyboardButton("💬 Contact Admin", url=ADMIN_LINK)
         ]
-            for admin in ADMINS
-        ]
         btn.append(
             [InlineKeyboardButton("Cʟᴏsᴇ", callback_data="close_data")]
         )
@@ -515,8 +513,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "dmca":
         buttons = [[
             InlineKeyboardButton('💬 Contact Admin', url=ADMIN_LINK)
-        ]
-            for admin in ADMINS
         ]
         buttons.append(
             [InlineKeyboardButton('⏪ Bᴀᴄᴋ', callback_data='start')]
