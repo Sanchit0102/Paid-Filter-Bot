@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>%s</title>
-        <meta name="description" content="Create permanent links for sharing text, images, documents, and more with your Telegram File Share Bot. Set passwords and additional data protection features.">
 
-        <!-- Open Graph Tags for Social Media Sharing -->
-        <meta property="og:title" content="Your Personal File Share Bot for Telegram">
-        <meta property="og:description" content="Create permanent links for sharing text, images, documents, and more with your Telegram File Share Bot. Set passwords and additional data protection features.">
-        <meta property="og:image" content="URL to an image representing your bot">
-        <meta property="og:url" content="URL of your bot's website">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="https://i.ibb.co/M8S0Zzj/live-streaming.png" itemprop="thumbnailUrl">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>%s</title>
+    <link rel="stylesheet" type='text/css' href="https://adarsh-goel.github.io/resources/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
 
-        <!-- Twitter Card Tags for Twitter Sharing -->
-        <meta name="twitter:card" content="nabilanavab">
-        <meta name="twitter:site" content="@nabilanavab">
-        <meta name="twitter:title" content="Your Personal File Share Bot For Telegram">
-        <meta name="twitter:description" content="Create permanent links for sharing text, images, documents, and more with your Telegram File Share Bot. Set passwords and additional data protection features.">
-        <meta name="twitter:image" content="URL to an image representing your bot">
 
-        <meta name="author" content="nabilanavab">
-        <meta name="keywords" content="Telegram bot, file sharing, permanent links, password protection, data protection">
+</head>
 
-        <meta name="robots" content="donate, home, about, source">
-        <link rel="canonical" href="https://telegram.dog/ilovepdf_bot">
+<body class='cyber'>
+    <header>
+        <div class="toogle"></div>
+        <div id="file-name" class="cyber">
+            <marquee direction="left"> %s</marquee>
+        </div>
+    </header>
 
-        <link rel="icon" href="URL_to_your_favicon" type="image/x-icon">
-        <link rel="stylesheet" href="styles.css">
+    <div class="container">
+        <a href=%s>
+            <button class="cybr-btn">
+                Download
+                <span aria-hidden>_</span>
+                <span aria-hidden class="cybr-btn__glitch">_404 Error</span>
+                <span aria-hidden class="cybr-btn__tag">_%s</span>
+            </button>
+        </a>
+    </div>
 
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f2f2f2;
-                text-align: center;
-                margin-top: 150px;
-            }
-            
-            h1 {
-                color: #333;
-            }
-            
-            .quote {
-                font-size: 24px;
-                margin-bottom: 20px;
-            }
-    
-            .reload-button {
-                padding: 10px 20px;
-                font-size: 16px;
-                border-radius: 20px;
-                background-color: #333;
-                color: #fff;
-                border: none;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-            }
-    
-            .reload-button:hover {
-                background-color: #555;
-            }
-    
-        </style>
-    </head>
-    <body>
-        <h1>Please Don't Say Just Hello In Chat</h1>
-        <div class="quote">Under Development..</div></br></br>
-        <button class="reload-button" onclick="reloadPage()">Reload</button>
+    <footer>
+        <center>
+            <a href="https://github.com/biisal/biisal-file-stream-pro">
+                <h3 style="color: black; text-align: center;">FORK ME</h3>
+            </a>
+        </center>
 
-        <script>
-            function reloadPage() {
-                location.reload();
-            }
-        </script>
-    </body>
+    </footer>
+
+
+    <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+    <script>
+        const controls = [
+            'play-large',
+            'rewind',
+            'play',
+            'fast-forward',
+            'progress',
+            'current-time',
+            'duration',
+            'mute',
+            'volume',
+            'captions',
+            'settings',
+            'pip',
+            'airplay',
+            'download',
+            'fullscreen'
+        ];
+        document.addEventListener('DOMContentLoaded', () => {
+            const player = Plyr.setup('.player', { controls });
+        });
+
+        const body = document.querySelector('body');
+        const title = document.querySelector('#file-name');
+        const footer = document.querySelector('footer');
+        const toogle = document.querySelector('.toogle');
+        toogle.onclick = () => {
+            body.classList.toggle('dark')
+            footer.classList.toggle('dark')
+            title.classList.toggle('dark')
+        }
+    </script>
+</body>
+
 </html>
