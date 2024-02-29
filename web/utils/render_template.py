@@ -19,7 +19,7 @@ async def media_watch(message_id):
     if tag == 'video':
         async with aiofiles.open('web/template/watch.html') as r:
             heading = 'Watch - {}'.format(file_name)
-            html = (await r.read()).replace('tag', tag) % (heading, file_name, src)
+            html = (await r.read()).replace('tag', tag) % (heading, src, file_name)
     else:
         html = '<h1>This is not streamable file</h1>'
     return html
